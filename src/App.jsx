@@ -26,10 +26,12 @@ export const App = () => {
   }
 
   return (
-    <div>
+    <div className="border">
       <header>Dogアプリ</header>
-      <p>犬の画像を表示するサイトです</p>
-      <img src={dogUrl} alt="犬の画像" />
+      <section className="container">
+        <p className="description">犬の画像を表示するサイトです</p>
+        <img className="dogImg" src={dogUrl} alt="犬の画像" />
+      </section>
       <button onClick={handleClick}>更新</button>
     </div>
   )
