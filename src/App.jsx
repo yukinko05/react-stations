@@ -1,15 +1,15 @@
 // DO NOT DELETE
 
 import './App.css'
-import Header from './Header'
-import Description from './Description'
-import DogListContainer from './DogListContainer'
+import Header from './Header/Header'
+import Description from './Description/Description'
+import DogListContainer from './DogListContainer/DogListContainer'
 /**
  * @type {() => JSX.Element}
  */
 export const App = () => {
   return (
-    <div className="border">
+    <div>
       <Header />
       <Description />
       <DogListContainer />

@@ -1,7 +1,8 @@
 // @ts-check
 
 import { useEffect, useState } from 'react'
-import BreedsSelect from './BreedsSelect'
+import BreedsSelect from '../BreedsSelect/BreedsSelect'
+import './DogListContainer.css'
 
 export const DogListContainer = () => {
   const [breeds, setBreeds] = useState([])
@@ -20,13 +21,13 @@ export const DogListContainer = () => {
   }, [])
 
   return (
-    <>
+    <div className="listContainer">
       <BreedsSelect
         breeds={breeds}
         selectedBreed={selectedBreed}
         setSelectedBreed={setSelectedBreed}
       />
-    </>
+    </div>
   )
 }
 

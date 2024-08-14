@@ -1,7 +1,8 @@
 // @ts-check
 
-import DogImage from './DogImage'
+import DogImage from '../DogImage/DogImage'
 import { useState } from 'react'
+import './Description.css'
 
 export const Description = () => {
   const [dogUrl, setDogUrl] = useState(
@@ -24,11 +25,13 @@ export const Description = () => {
 
   return (
     <>
-      <section className="container">
+      <section className="dogContainer">
         <p className="description">犬の画像を表示するサイトです</p>
         <DogImage imageUrl={dogUrl} />
       </section>
-      <button onClick={handleClick}>更新</button>
+      <button className="updateBtn" onClick={handleClick}>
+        更新
+      </button>
     </>
   )
 }
