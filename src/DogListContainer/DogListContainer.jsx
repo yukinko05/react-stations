@@ -40,6 +40,11 @@ export const DogListContainer = () => {
       <button className="displayBtn" onClick={handleSelected}>
         表示
       </button>
+      <div className="dogImages">
+        {dogImages.map(img => (
+          <img className="dogImg" key={img} src={img} />
+        ))}
+      </div>
     </div>
   )
 }
