@@ -1,8 +1,9 @@
 .descriptionContainer {
+  width: 1296px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 400px;
+  margin: auto;
 }
 
 .description {

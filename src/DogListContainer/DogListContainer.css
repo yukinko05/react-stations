@@ -1,7 +1,12 @@
+.divider {
+  border: none;
+  border-top: 2px solid black;
+  margin: 48px;
+}
+
 .dogListContainer {
   display: flex;
   justify-content: center;
-  border-top: 1px solid black;
   padding: 32px;
 }
 
