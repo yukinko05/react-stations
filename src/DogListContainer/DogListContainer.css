@@ -1,0 +1,30 @@
+.dogListContainer {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid black;
+  padding: 32px;
+}
+
+.displayBtn {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 64px;
+  margin-left: 40px;
+}
+
+.dogImages {
+  width: 1296px;
+  display: grid;
+  justify-items: center;
+  gap: 48px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+}
+
+.dogImg {
+  width: 400px;
+  height: 300px;
+}

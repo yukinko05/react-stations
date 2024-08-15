@@ -24,15 +24,19 @@ export const Description = () => {
   }
 
   return (
-    <>
-      <section className="dogContainer">
-        <p className="description">犬の画像を表示するサイトです</p>
-        <DogImage imageUrl={dogUrl} />
-      </section>
-      <button className="updateBtn" onClick={handleClick}>
-        更新
-      </button>
-    </>
+    <div className="descriptionContainer">
+      <p className="description">犬の画像を表示するサイトです</p>
+      <div className="rightLayout">
+        <div>
+          <DogImage imageUrl={dogUrl} />
+        </div>
+        <div className="btnLayout">
+          <button className="updateBtn" onClick={handleClick}>
+            更新
+          </button>
+        </div>
+      </div>
+    </div>
   )
 }
 

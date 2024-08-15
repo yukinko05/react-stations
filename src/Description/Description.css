@@ -1,13 +1,22 @@
-.dogContainer {
+.descriptionContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  width: 1200px;
   height: 400px;
 }
 
 .description {
-  margin: auto;
+  font-size: 24px;
+}
+
+.rightLayout {
+  display: flex;
+  flex-direction: column;
+}
+
+.btnLayout {
+  text-align: right;
+  margin-top: 16px;
 }
 
 .updateBtn {
@@ -17,5 +26,4 @@
   border: none;
   border-radius: 4px;
   padding: 6px 24px;
-  margin: 0px 60px 10px 0px;
 }

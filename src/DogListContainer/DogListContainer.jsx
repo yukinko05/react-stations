@@ -31,21 +31,25 @@ export const DogListContainer = () => {
   }
 
   return (
-    <div className="listContainer">
-      <BreedsSelect
-        breeds={breeds}
-        selectedBreed={selectedBreed}
-        setSelectedBreed={setSelectedBreed}
-      />
-      <button className="displayBtn" onClick={handleSelected}>
-        表示
-      </button>
+    <>
+      <div className="dogListContainer">
+        <BreedsSelect
+          breeds={breeds}
+          selectedBreed={selectedBreed}
+          setSelectedBreed={setSelectedBreed}
+        />
+        <div>
+          <button className="displayBtn" onClick={handleSelected}>
+            表示
+          </button>
+        </div>
+      </div>
       <div className="dogImages">
         {dogImages.map(img => (
           <img className="dogImg" key={img} src={img} />
         ))}
       </div>
-    </div>
+    </>
   )
 }
 

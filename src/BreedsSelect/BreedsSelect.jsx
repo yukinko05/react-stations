@@ -1,4 +1,6 @@
 // @ts-check
+import './BreedsSelect.css'
+
 export const BreedsSelect = ({ breeds, selectedBreed, setSelectedBreed }) => {
   const handleSelectChange = e => {
     setSelectedBreed(e.target.value)
@@ -8,6 +10,7 @@ export const BreedsSelect = ({ breeds, selectedBreed, setSelectedBreed }) => {
       <label htmlFor="breeds">
         Breeds List
         <select
+          className="select"
           name="breeds"
           id="breeds"
           value={selectedBreed}
