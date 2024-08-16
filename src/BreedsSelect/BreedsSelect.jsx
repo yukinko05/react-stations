@@ -7,7 +7,7 @@ export const BreedsSelect = ({ breeds, selectedBreed, setSelectedBreed }) => {
   }
   return (
     <>
-      <label htmlFor="breeds">
+      <label className="breedsLabel" htmlFor="breeds">
         Breeds List
         <select
           className="select"

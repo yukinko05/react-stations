@@ -25,7 +25,7 @@ export const Description = () => {
 
   return (
     <div className="descriptionContainer">
-      <p className="description">犬の画像を表示するサイトです</p>
+      <p className="description">犬の画像を表示するサイトです。</p>
       <div className="rightLayout">
         <div>
           <DogImage imageUrl={dogUrl} />

@@ -33,7 +33,7 @@ export const DogListContainer = () => {
   return (
     <>
       <hr className="divider" />
-      <div className="dogListContainer">
+      <div className="dogImagesContainer">
         <BreedsSelect
           breeds={breeds}
           selectedBreed={selectedBreed}

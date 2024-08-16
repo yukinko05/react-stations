@@ -1,8 +1,14 @@
+.breedsLabel {
+  font-family: 'Times New Roman';
+}
+
 .select {
   font-size: 16px;
+  font-family: 'Times New Roman';
   color: #6c757d;
   margin-left: 16px;
-  padding: 8px;
+  padding: 8px 320px;
+  padding-left: 16px;
   border: 1px solid #ced4da;
   border-radius: 4px;
 }

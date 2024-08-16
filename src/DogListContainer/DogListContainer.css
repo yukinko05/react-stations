@@ -4,10 +4,9 @@
   margin: 48px;
 }
 
-.dogListContainer {
+.dogImagesContainer {
   display: flex;
   justify-content: center;
-  padding: 32px;
 }
 
 .displayBtn {
@@ -21,12 +20,13 @@
 }
 
 .dogImages {
-  width: 1296px;
+  width: 1280px;
   display: grid;
   justify-items: center;
-  gap: 48px;
+  gap: 16px 40px;
   grid-template-columns: repeat(3, 1fr);
   margin: auto;
+  margin-top: 72px;
 }
 
 .dogImg {
