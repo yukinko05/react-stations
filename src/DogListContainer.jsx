@@ -6,7 +6,7 @@ import './DogListContainer.css'
 
 export const DogListContainer = () => {
   const [breeds, setBreeds] = useState([])
-  const [selectedBreed, setSelectedBreed] = useState('')
+  const [selectedBreed, setSelectedBreed] = useState('african')
   const [dogImages, setDogImages] = useState([])
 
   useEffect(() => {
@@ -22,7 +22,6 @@ export const DogListContainer = () => {
   }, [])
 
   const handleSelected = () => {
-    //TODO selectedBreedのnullチェックを行う
     fetch(`https://dog.ceo/api/breed/${selectedBreed}/images/random/12`)
       .then(res => res.json())
       .then(data => {
