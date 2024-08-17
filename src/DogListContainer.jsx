@@ -1,7 +1,7 @@
 // @ts-check
 
 import { useEffect, useState } from 'react'
-import BreedsSelect from '../BreedsSelect/BreedsSelect'
+import BreedsSelect from './BreedsSelect'
 import './DogListContainer.css'
 
 export const DogListContainer = () => {
@@ -27,6 +27,9 @@ export const DogListContainer = () => {
       .then(res => res.json())
       .then(data => {
         setDogImages(data.message)
+      })
+      .catch(error => {
+        console.error('データ取得に失敗しました', error)
       })
   }
 

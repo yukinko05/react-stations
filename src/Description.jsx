@@ -1,6 +1,6 @@
 // @ts-check
 
-import DogImage from '../DogImage/DogImage'
+import DogImage from './DogImage'
 import { useState } from 'react'
 import './Description.css'
 

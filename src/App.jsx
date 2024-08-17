@@ -1,9 +1,9 @@
 // DO NOT DELETE
 
 import './App.css'
-import Header from './Header/Header'
-import Description from './Description/Description'
-import DogListContainer from './DogListContainer/DogListContainer'
+import Header from './Header'
+import Description from './Description'
+import DogListContainer from './DogListContainer'
 /**
  * @type {() => JSX.Element}
  */
