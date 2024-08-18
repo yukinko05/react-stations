@@ -1,6 +1,7 @@
 // @ts-check
 
 import DogImage from './DogImage'
+import ButtonComponent from './ButtonComponent/ButtonComponent'
 import { useState } from 'react'
 import './Description.css'
 
@@ -31,9 +32,11 @@ export const Description = () => {
           <DogImage imageUrl={dogUrl} />
         </div>
         <div className="btnLayout">
-          <button className="updateBtn" onClick={handleClick}>
-            更新
-          </button>
+          <ButtonComponent
+            title={'更新'}
+            className={'button'}
+            handleClick={handleClick}
+          />
         </div>
       </div>
     </div>

@@ -6,24 +6,21 @@ export const BreedsSelect = ({ breeds, selectedBreed, setSelectedBreed }) => {
     setSelectedBreed(e.target.value)
   }
   return (
-    <>
-      <label className="breedsLabel" htmlFor="breeds">
-        Breeds List
-        <select
-          className="select"
-          name="breeds"
-          id="breeds"
-          value={selectedBreed}
-          onChange={handleSelectChange}
-        >
-          {breeds.map(breed => (
-            <option key={breed} value={breed}>
-              {breed}
-            </option>
-          ))}
-        </select>
-      </label>
-    </>
+    <label className="breedsLabel">
+      Breeds List
+      <select
+        className="select"
+        name="breeds"
+        value={selectedBreed}
+        onChange={handleSelectChange}
+      >
+        {breeds.map(breed => (
+          <option key={breed} value={breed}>
+            {breed}
+          </option>
+        ))}
+      </select>
+    </label>
   )
 }
 

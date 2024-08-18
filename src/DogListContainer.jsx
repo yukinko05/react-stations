@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import BreedsSelect from './BreedsSelect'
+import ButtonComponent from './ButtonComponent/ButtonComponent'
 import './DogListContainer.css'
 
 export const DogListContainer = () => {
@@ -42,9 +43,11 @@ export const DogListContainer = () => {
           setSelectedBreed={setSelectedBreed}
         />
         <div>
-          <button className="displayBtn" onClick={handleSelected}>
-            表示
-          </button>
+          <ButtonComponent
+            title={'表示'}
+            className={'button displayBtn'}
+            handleClick={handleSelected}
+          />
         </div>
       </div>
       <div className="dogImages">
